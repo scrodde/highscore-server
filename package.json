@@ -1,0 +1,25 @@
+{
+  "name": "highscore-server",
+  "version": "1.0.0",
+  "description": "Highscore server for the game Reaction",
+  "main": "index.coffee",
+  "scripts": {
+    "start": "forever start -c coffee index.coffee",
+    "stop": "forever stop index.coffee",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Niklas Schröder",
+  "license": "The MIT License (MIT)",
+  "dependencies": {
+    "body-parser": "^1.9.2",
+    "bookshelf": "^0.7.9",
+    "express": "^4.10.1",
+    "knex": "^0.7.3",
+    "sqlite3": "^3.0.2"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.8.0",
+    "grunt": "^0.4.5",
+    "grunt-shipit": "^0.4.2"
+  }
+}
